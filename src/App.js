@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "../src/components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Podcast from "./pages/Podcast";
+import Blog from "./pages/Blog";
+import Write from "./pages/Write";
+import Admin from "./pages/Admin";
+import Single from "./components/SinglePost";
+
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { useContext } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  //   <Router>
+  //   <Navbar />
+  //   <Routes>
+  //     <Route exact path="/">
+  //       <Home />
+  //     </Route>
+  //     <Route path="/about"> <About /> </Route>
+  //     <Route path="/admin"><Admin /> </Route>
+  //     <Route path="/write"> <Write /> </Route>
+  //     <Route path="/podcast"><Podcast /> </Route>
+  //     <Route path="/blog"> <Blog /></Route>
+  //     <Route path="/contact"> <Contact /></Route>
+  //     <Route path="/post/:postId">
+  //       <Single />
+  //     </Route>
+  //     <Footer />
+  //   </Routes>
+  // </Router>
+    <Navbar />
   );
 }
 
